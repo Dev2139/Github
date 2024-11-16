@@ -125,3 +125,56 @@
 ## git stash drop
 ### Drops the stash
 
+# Rewriting History with Interactive Rebase
+
+# Create multiple commits
+
+## echo "Commit 1" > file1.txt && git add file1.txt && git commit -m "Commit 1"
+## echo "Commit 2" > file2.txt && git add file2.txt && git commit -m "Commit 2"
+## echo "Commit 3" > file3.txt && git add file3.txt && git commit -m "Commit 3"
+### 
+
+## git rebase -i HEAD~3
+### Opens an interactive rebase menu
+
+## git checkout -b cherry-pick-example
+### Creates a new branch called cherry-pick-example
+
+## git cherry-pick <Commit 1>
+### Applies the changes from the specified commit to the current branch
+
+## git tag -a v1.0 -m "Release 1.0 release"
+### Creates a new tag called v1.0 with a meaningful commit message
+
+## git push origin v1.0
+### only pushes the tag to the remote repository
+
+## git remote add origin <repository-url>
+### Adds a new remote repository called origin
+
+
+## git push origin main
+### pushes the changes  to the remote repository
+
+
+# Forking and Contributing
+
+## git clone <forked-repo-url>
+### Clones the forked repository to the local machine
+
+# Create a new branch, make changes, and push
+
+## git checkout -b fix-typo
+## echo "Typo fixed" >> README.md
+## git add README.md
+## git commit -m "Fixed a typo"
+## git push origin fix-typo
+### Pushes the changes to the remote repository
+
+# Git Ignore
+
+## echo "node-modules/" >> .gitignore
+### Adds the node-modules directory to the .gitignore file
+
+## git add . 
+### add files and ignred files to the staging area
